@@ -442,14 +442,15 @@ h6 {
 }
 @media (max-width: 699px) {
   .o-container {
-    padding-left: 20px;
+    /* padding-left: 20px;
     padding-right: 20px;
+  } */
   }
 }
 @media (min-width: 700px) {
   .o-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    /* padding-left: 2.5rem;
+    padding-right: 2.5rem; */
   }
 }
 .o-ratio {
@@ -711,7 +712,7 @@ h6 {
   transform: translateY(-50%);
 }
 .o-scroll {
-  background-color: #d4c9c9;
+  background-color: #000000;
   overflow: hidden;
 }
 .o-title {
@@ -1162,6 +1163,10 @@ html:not(.has-scroll-smooth) .c-fixed {
 }
 .c-section {
   position: relative;
+}
+
+section {
+  background-color: black;
 }
 @media (max-width: 1199px) {
   .c-section {
@@ -1754,4 +1759,65 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
   clip: auto;
   height: auto;
   width: auto;
+}
+
+.slides {
+  width: 2000px !important;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.slides .slideImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.slides:hover {
+  width: 4000px;
+}
+
+.slides:hover .slideImg {
+  transform: scale(1.2);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.swiperHorizontal .swiper-wrapper {
+  display: flex;
+  width: 100000px;
+}
+
+.moveLineBox {
+  display: flex;
+  justify-content: center;
+}
+.moveLine {
+  position: absolute;
+  top: 0;
+  border: 1px solid rgb(255, 255, 255);
+  width: 0.01px;
+  height: 800px;
+  opacity: 1;
 }
