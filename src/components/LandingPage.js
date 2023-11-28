@@ -13,6 +13,13 @@ import slide01 from "../image/slide_01.png";
 import slide02 from "../image/slide_02.png";
 import slide03 from "../image/slide_03.png";
 import slide04 from "../image/slide_04.png";
+import pic01 from "../image/pic_1.jpg";
+import pic02 from "../image/pic_2.jpg";
+import pic03 from "../image/pic_3.jpg";
+import pic04 from "../image/pic_4.jpg";
+import pic05 from "../image/pic_5.jpg";
+import pic06 from "../image/pic_6.jpg";
+import pic07 from "../image/pic_7.jpg";
 import starFrame from "../image/starFrame.svg";
 
 export function LandingPage() {
@@ -231,7 +238,7 @@ export function LandingPage() {
                   style={{ width: "50%", height: 600 }}
                 >
                   <img
-                    src={slide01}
+                    src={pic01}
                     className="sketchImg"
                     width={500}
                     height={500}
@@ -248,7 +255,7 @@ export function LandingPage() {
                   }}
                 >
                   <img
-                    src={slide02}
+                    src={pic02}
                     className="sketchImg"
                     width={500}
                     height={500}
@@ -260,7 +267,7 @@ export function LandingPage() {
                   style={{ width: 1900, height: 600 }}
                 >
                   <img
-                    src={slide03}
+                    src={pic03}
                     className="sketchImg"
                     width={500}
                     height={500}
@@ -272,7 +279,43 @@ export function LandingPage() {
                   style={{ width: 1900, height: 600 }}
                 >
                   <img
-                    src={slide04}
+                    src={pic04}
+                    className="sketchImg"
+                    width={500}
+                    height={500}
+                    style={{ width: "100%" }}
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide
+                  className="sketchSlides"
+                  style={{ width: 1900, height: 600 }}
+                >
+                  <img
+                    src={pic05}
+                    className="sketchImg"
+                    width={500}
+                    height={500}
+                    style={{ width: "100%" }}
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide
+                  className="sketchSlides"
+                  style={{ width: 1900, height: 600 }}
+                >
+                  <img
+                    src={pic06}
+                    className="sketchImg"
+                    width={500}
+                    height={500}
+                    style={{ width: "100%" }}
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide
+                  className="sketchSlides"
+                  style={{ width: 1900, height: 600 }}
+                >
+                  <img
+                    src={pic07}
                     className="sketchImg"
                     width={500}
                     height={500}

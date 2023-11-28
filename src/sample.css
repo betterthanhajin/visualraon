@@ -1808,7 +1808,7 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
 
 .swiperHorizontal .swiper-wrapper {
   display: flex;
-  width: 100000px;
+  width: 5000px;
 }
 
 .moveLineBox {
