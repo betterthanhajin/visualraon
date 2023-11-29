@@ -36,3 +36,104 @@
     transform: rotate(360deg);
   }
 }
+
+.slides {
+  width: 2000px !important;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.slides .slideImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.slides:hover {
+  width: 4000px;
+}
+
+.slides:hover .slideImg {
+  transform: scale(1.2);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.swiperHorizontal .swiper-wrapper {
+  display: flex;
+  width: 5000px;
+}
+
+.moveLineBox {
+  display: flex;
+  justify-content: center;
+}
+.moveLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 45%;
+  background-color: white;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  z-index: 2;
+}
+
+.typing-text {
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* 타이핑 커서 스타일 */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em; /* 글자 간격 */
+  animation: typing 7s steps(10, end), blink-caret 0.5s step-end infinite;
+  position: absolute;
+  color: white;
+  top: 100px;
+}
+
+/* &.typing-text {
+  opacity: 1;
+} */
+
+/* 타이핑 애니메이션 키프레임 설정 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* 커서 깜빡임 애니메이션 키프레임 설정 */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}

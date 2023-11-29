@@ -7,12 +7,14 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.16.5",
+    "lax.js": "2.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-locomotive-scroll": "^0.2.2",
     "react-scripts": "5.0.1",
     "swiper": "^11.0.5",
     "throttle": "^1.0.3",
+    "use-lax": "4.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
